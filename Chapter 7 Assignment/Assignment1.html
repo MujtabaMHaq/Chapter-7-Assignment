@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Chapter 7 Assignment 1</title>
+</head>
+
+<body>
+<!-- Form -->
+	<form action="http://www.example.com/subscribe.php"
+method="post">
+<table width="100%">
+<tr>
+	<td width="25%">Username:</td>
+	<td><input type="text" name="username" size="30"
+ maxlength="30" /></td>
+</tr>
+<tr>
+	<td width="25%">Password:</td>
+	<td><input type="password" name="password" size="30"
+ maxlength="30"/></td>
+</tr>
+<tr>
+	<td width="25%">Date of Biirth:</td>
+	<td><input type="date" name="dateofbirth"/></td>
+</tr>
+<tr>
+	<td width="25%">Web URL:</td>
+	<td><input type="url" name="website" size="30" maxlength="30"/></td>
+</tr>
+<tr>
+	<td width="25%">Address:</td>
+	<td><input type="text" name="address" size="30"
+ maxlength="30" /></td>
+</tr>
+<tr>
+	<td width="25%">City:</td>
+	<td>
+ <select name="referrer" id="city">
+ <option value="karachi">Karachi</option>
+ <option value="lahore">Lahore</option>
+ <option value="islamabad">Islamabad</option>
+ <option value="peshawar">Peshawar</option>
+ </select></td>
+</tr>
+<tr>
+	<td width="25%">State:</td>
+	<td><input type="text" name="state" size="20"
+ maxlength="20" /></td>
+</tr>
+<tr>
+	<td width="25%">Zip:</td>
+	<td><input type="text" name="zip" size="20"
+ maxlength="6"/></td>
+</tr>
+<tr>
+	<td width="25%">Megazine:</td>
+	<td><select name="megazine" size="4"
+ multiple="multiple">
+ <option value="news-week">
+ News Week</option>
+ <option value="time">Time</option>
+ <option value="fortune">Fortune</option>
+ <option value="tv-guide">TV Guide</option>
+</select></td>
+</tr>
+</table>
+
+<!--Field Set-->
+<fieldset style="width:50%">
+<legend>Contact Details</legend>
+	<label>Email:<br/><input type="email" name="email"/></label><br/>
+	<label>Mobile:<br/><input type="mobile" name="mobile"/></label><br/>
+	<label>Phone:<br/><input type="phone" name="phone"/></label><br/>
+</fieldset>
+
+<!--Additional Comments-->
+<p>Additional Comments</p>
+	<textarea name="comments" cols="30" rows="4">Enter your comments...</textarea>
+
+<!--Profile Picture-->
+<table>
+<tr>
+	<td>Upload your Profile Picture:</td>
+<td><input type="file" name="profile-picture"/><br />
+<input type="submit" value="Upload"/></td>
+<tr>
+	<td><button>Send Your Order</button></td>
+</tr>
+</tr>
+</table>
+<br/>
+<br/>
+<br/>
+	
+<!--Subscription-->
+<label>Email: <input type="email" name="email"/></label><br/>
+<label>Subscription:
+	<input type="radio" name="subscription" checked="Checked"/> 1 Year
+	<input type="radio" name="subscription"/> 2 Years <br/>
+	<input type="checkbox" name="subscription-list"/>Yes! Put me in the list!
+</label>
+
+<!--Subscribe Image Button-->
+	<p><input type="image" src="images/subscribe-button.png" alt="Subscribe" value="subscribe"/></p>
+</form>
+</body>
+</html>
